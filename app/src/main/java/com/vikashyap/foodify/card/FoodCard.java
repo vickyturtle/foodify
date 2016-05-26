@@ -69,8 +69,8 @@ public class FoodCard extends BaseCard<Food, FoodCardPresenter, FoodCard.ViewHol
 		viewHolder.favoriteView.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				getCardPresenter().onFavoriteClick(getCardData());
 				animateFavorite(v);
+				getCardPresenter().onFavoriteClick(getCardData());
 				setFavoriteButton(viewHolder);
 			}
 		});
