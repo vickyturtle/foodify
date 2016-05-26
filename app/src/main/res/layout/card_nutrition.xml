@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    app:cardPreventCornerOverlap="true">
+
+    <TextView
+        android:id="@+id/nutrition_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:padding="@dimen/keyline_1"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_large"
+        android:textStyle="bold"
+        tools:text="Carbohydrates"/>
+
+    <TextView
+        android:id="@+id/nutrition_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:padding="@dimen/keyline_1"
+        android:textColor="@color/text_dark_grey"
+        android:textSize="@dimen/text_large"
+        tools:text="40g"/>
+</android.support.v7.widget.CardView>

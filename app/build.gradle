@@ -1,0 +1,48 @@
+apply from: "../libraries.gradle"
+
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'realm-android'
+
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.vikashyap.foodify"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    apt libraries.daggerCompile
+    apt libraries.butterknifeApt
+    compile libraries.appCompat
+    compile libraries.cardView
+    compile libraries.designSupport
+    compile libraries.support
+    compile libraries.butterknife
+    compile libraries.dagger
+    compile libraries.picasso
+    compile libraries.rxJava
+    compile libraries.rxAndroid
+    compile libraries.retrofit
+    compile libraries.okhttpLogger
+    compile libraries.retrofitRx
+    compile libraries.retrofitGson
+
+    testCompile testLibraries.junit
+    testCompile testLibraries.mockito
+    testCompile testLibraries.mockitoCore
+}

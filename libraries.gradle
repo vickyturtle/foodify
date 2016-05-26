@@ -1,0 +1,52 @@
+/******************************************
+ * All libraries name and version go here.
+ * This is done to force use of same version of
+ * libraries every where like support library versions.
+ **/
+ext {
+
+    //android libraries
+    supportVersion = '23.4.0'
+    butterknifeVersion = '8.0.1'
+    daggerVersion = '2.2'
+    rxJavaVersion = '1.1.4'
+    rxAndroidVersion = '1.2.0'
+    retrofitVersion = '2.0.2'
+    okhttpLogVersion = '3.2.0'
+    picassoVersion = '2.5.2'
+    realmVersion = '0.90.1'
+
+    //test libraries
+    junitVersion = '4.12'
+    mockitoVersion = "1.9.5"
+    mockitoCoreVersion = "1.10.19"
+
+
+    libraries = [
+            appCompat         : "com.android.support:appcompat-v7:${supportVersion}",
+            support           : "com.android.support:support-v4:${supportVersion}",
+            supportAnnotations: "com.android.support:support-annotations:${supportVersion}",
+            cardView          : "com.android.support:cardview-v7:${supportVersion}",
+            designSupport     : "com.android.support:design:${supportVersion}",
+            butterknife       : "com.jakewharton:butterknife:${butterknifeVersion}",
+            butterknifeApt    : "com.jakewharton:butterknife-compiler:${butterknifeVersion}",
+            dagger            : "com.google.dagger:dagger:${daggerVersion}",
+            daggerCompile     : "com.google.dagger:dagger-compiler:${daggerVersion}",
+            rxJava            : "io.reactivex:rxjava:${rxJavaVersion}",
+            rxAndroid         : "io.reactivex:rxandroid:${rxAndroidVersion}",
+            retrofit          : "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+            retrofitRx        : "com.squareup.retrofit2:adapter-rxjava:${retrofitVersion}",
+            retrofitGson      : "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+            okhttpLogger      : "com.squareup.okhttp3:logging-interceptor:${okhttpLogVersion}",
+            picasso           : "com.squareup.picasso:picasso:${picassoVersion}",
+            realm             : "io.realm:realm-gradle-plugin:${realmVersion}",
+
+    ]
+
+    testLibraries = [
+            junit      : "junit:junit:${junitVersion}",
+            mockito    : "org.mockito:mockito-all:${mockitoVersion}",
+            mockitoCore: "org.mockito:mockito-core:${mockitoCoreVersion}"
+    ]
+
+}

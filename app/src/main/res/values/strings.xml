@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Foodify</string>
+    <string name="title_favorite">Favorite Foods</string>
+
+    <!-- Errors -->
+    <string name="error">Error!</string>
+    <string name="error_no_network_title">No network connection.</string>
+    <string name="error_no_network">Please check your connection, then try again.</string>
+    <string name="error_timeout_title">Timeout!</string>
+    <string name="error_timeout">Server taking too long to respond. Please check again.</string>
+    <string name="error_unknown">An unknown error has occurred. Please try again.</string>
+
+    <!-- Main Activity -->
+    <string name="search_pointer_title">Worried about your favorite food.</string>
+    <string name="search_pointer_subtitle">Just type your favorite food name in the search box above to get details of all the nutrition value.</string>
+    <string-array name="food_quotes">
+        <item>There is no sincerer love than the love of food \n ~ George Bernard Shaw</item>
+        <item>One cannot think well, love well, sleep well, if one has not dined well.\n ~ Virginia Woolf</item>
+        <item>Health is not valued till sickness comes.\n ~ Thomas Fuller</item>
+        <item>In wine there is wisdom, in beer there is strength, in water there is bacteria. \n ~ David Auerbach</item>
+        <item>The secret of success in life is to eat what you like and let the food fight it out inside. \n ~ Mark Twain</item>
+    </string-array>
+
+    <string name="menu_search">Search</string>
+    <string name="menu_search_hint">Search by name</string>
+    <string name="menu_preferences">Preferences</string>
+    <string name="menu_favorites">View Favorites</string>
+    <string name="no_result_title">OOPS!</string>
+    <string name="no_result_subtitle">Search for %1$s yielded no result!</string>
+
+    <string name="empty_favorites">You haven\'t saved any favorite food yet. Click on favorite icon on any card in search list to save it your favorites list.</string>
+
+    <!-- Details -->
+    <string name="details_calories">Calories</string>
+    <string name="details_carbohydrates">Carbohydrates</string>
+    <string name="details_proteins">Proteins</string>
+    <string name="details_sodium">Sodium</string>
+    <string name="details_potassium">Potassium</string>
+    <string name="details_fiber">Fiber</string>
+    <string name="details_fat">Fat</string>
+    <string name="details_cholesterol">Cholesterol</string>
+    <string name="details_sugar">Sugar</string>
+    <string name="details_serving">Servings</string>
+    <string name="details_saturated_fat">Saturated Fat</string>
+    <string name="details_unsaturated_fat">Unsaturated Fat</string>
+
+</resources>
